@@ -12,7 +12,6 @@
 # Пример: 4 -> 1 2 3 4
 # 9
 
-
 n = 5 # кустов
 from random import randint
 list_1 = list(randint(1, 5) for i in range(int(input('Введите кол-во кустов: '))))
