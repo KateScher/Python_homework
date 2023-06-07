@@ -8,15 +8,21 @@
 #       4 15 43 1 15 1 (каждое число вводится с новой строки)
 # Вывод: 3 3 2 12
 
-result = []
-row = True
+def common_member(a, b):   
+    a_set = set(a)
+    b_set = set(b)
+     
+    # check length
+    if len(a_set.intersection(b_set)) > 0:
+        return(a_set.difference(b_set)) 
+    else:
+        return("no common elements")
+     
+  
+a = list(map(int, input().split())) 
+print(a)
 
-while row:
-    row = input()
-    if row:
-        numbers = map(int, row.split())
-        result.append(list(numbers))
-        
-print(result)
+b = list(map(int, input().split())) 
+print(b)
 
-
+print(common_member(a, b))
