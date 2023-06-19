@@ -14,6 +14,7 @@ def rhythm(str):
     str = str.split()
     list_1 = []
     for char in str:    
+        
         sum_ch = 0
         for i in char:
             if i in 'аеёиоуыэюя':

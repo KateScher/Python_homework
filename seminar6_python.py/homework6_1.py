@@ -8,3 +8,11 @@ m=int(input("Введите разность элементов:"))
 n=int(input("Введите количество элементов:"))
 arprog = [k + (i - 1) * m for i in range(1, n + 1)]
 print(*arprog)
+
+
+# пример идеального решения
+# a1 = int(input())
+# d = int(input())
+# n = int(input())
+# for i in range(n):
+# print(a1 + i * d)
