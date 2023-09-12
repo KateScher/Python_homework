@@ -16,3 +16,4 @@ for i in range(a):
     if arr[i] == x:
         count += 1
 print(f'Число {x} встречается в списке А {count} раз.')
+
